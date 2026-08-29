@@ -11,7 +11,7 @@ import { AnalyticsDashboard } from './pages/AnalyticsDashboard';
 export const App: React.FC = () => {
   return (
     <ExportProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={(import.meta as any).env.BASE_URL}>
         <div className="min-h-screen bg-[#070C18] text-slate-100 flex flex-col font-sans selection:bg-dak-saffron-500 selection:text-white">
           
           {/* Top Sticky Header & Navigation */}
